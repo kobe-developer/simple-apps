@@ -30,7 +30,7 @@ app.get('/users', (req, res, next) =>
       return res.send(fields);
     }
 
-    return res.send(error);
+    return res.send('error : ' + error);
   })
 });
 
