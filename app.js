@@ -26,11 +26,11 @@ app.get('/users', (req, res, next) =>
 {
   connection.query("SELECT * FROM tb_data ORDER BY id desc", (error, fields) =>
   {
-    if (error) {
-      console.log('error', error)
-    } else {
-      res.send(fields)
+    if (!error) {
+      return res.send(fields);
     }
+
+    return res.send(error);
   })
 });
 
