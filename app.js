@@ -12,17 +12,20 @@ const connection = require('./middleware/db_connect');
 // Dashboard
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.get('/app1', (req, res) => {
+app.get('/app1', (req, res) =>
+{
   res.send('Hello this Apps 1!')
 });
 
-app.get('/app2', (req, res) => {
+app.get('/app2', (req, res) =>
+{
   res.send('Hello this App 2!')
 });
 
-app.get('/users', (req, res, next) => {
-  const sql = "SELECT * FROM tb_data ORDER BY id desc"
-  connection.query(sql,(error, fields) => {
+app.get('/users', (req, res, next) =>
+{
+  connection.query("SELECT * FROM tb_data ORDER BY id desc", (error, fields) =>
+  {
     if (error) {
       console.log('error', error)
     } else {
@@ -31,7 +34,8 @@ app.get('/users', (req, res, next) => {
   })
 });
 
-app.listen(process.env.APP_PORT, () => {
+app.listen(process.env.APP_PORT, () =>
+{
   console.log(`Example app listening on port ${process.env.APP_PORT}`)
 })
 
