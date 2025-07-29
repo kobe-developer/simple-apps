@@ -1,11 +1,10 @@
 const express = require('express')
 const mysql = require('mysql');
-const app = express()
-
-app.disable("x-powered-by");
-
+const app = express();
 const path = require('path')
 require('dotenv').config();
+
+app.disable("x-powered-by");
 
 // Import Middleware
 const logger = require('./middleware/logger')
