@@ -2,7 +2,7 @@ name: app
 
 services:
   app:
-    image: 002000032/simple-apps
+    image: 1002000032/simple-apps
     build: ./app
     ports:
       - "5000:3000"
