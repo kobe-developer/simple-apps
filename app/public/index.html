@@ -21,6 +21,11 @@
                 text-align: center;
             }
 
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+
             nav {
                 background-color: #1565c0;
                 text-align: center;
@@ -50,6 +55,13 @@
                 margin-top: 40px;
             }
 
+            .about-img {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+                border-radius: 10px;
+            }
+
             footer {
                 text-align: center;
                 padding: 20px;
@@ -74,6 +86,8 @@
 
             .team-member img {
                 width: 80px;
+                height: 80px;
+                object-fit: cover;
                 border-radius: 50%;
             }
         </style>
@@ -82,6 +96,8 @@
     <body>
 
         <header>
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1350&q=80"
+                alt="Banner IT Company">
             <h1>PT. Solusi Digital Nusantara</h1>
             <p>Inovasi Teknologi untuk Masa Depan</p>
         </header>
@@ -99,6 +115,9 @@
                 <p>PT. Solusi Digital Nusantara adalah perusahaan IT yang menyediakan solusi digital terintegrasi,
                     termasuk pengembangan software, sistem informasi, dan layanan konsultasi teknologi. Kami berkomitmen
                     memberikan inovasi terbaik untuk mendukung transformasi digital di berbagai sektor industri.</p>
+                <img class="about-img"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+                    alt="Tentang Kami">
             </section>
 
             <section id="layanan">
@@ -115,17 +134,17 @@
                 <h2 class="section-title">Tim Kami</h2>
                 <div class="team">
                     <div class="team-member">
-                        <img src="https://via.placeholder.com/80" alt="CEO">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Andi Setiawan">
                         <h4>Andi Setiawan</h4>
                         <p>CEO & Founder</p>
                     </div>
                     <div class="team-member">
-                        <img src="https://via.placeholder.com/80" alt="CTO">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Siti Rahma">
                         <h4>Siti Rahma</h4>
                         <p>CTO</p>
                     </div>
                     <div class="team-member">
-                        <img src="https://via.placeholder.com/80" alt="Lead Dev">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Budi Prasetyo">
                         <h4>Budi Prasetyo</h4>
                         <p>Lead Developer</p>
                     </div>
