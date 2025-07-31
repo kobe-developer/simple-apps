@@ -2,182 +2,85 @@
 <html lang="id">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mini-Ecom UI</title>
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                font-family: sans-serif;
-                background: #f6f6f6;
-                color: #333;
-            }
-
-            header {
-                background: #ff5722;
-                padding: 10px;
-                color: #fff;
-                text-align: center;
-            }
-
-            .search-bar {
-                margin: 10px;
-                display: flex;
-            }
-
-            .search-bar input {
-                flex: 1;
-                padding: 10px;
-                border: none;
-                border-radius: 4px 0 0 4px;
-            }
-
-            .search-bar button {
-                padding: 10px;
-                background: #fff;
-                border: none;
-                border-radius: 0 4px 4px 0;
-                cursor: pointer;
-            }
-
-            .categories {
-                display: flex;
-                overflow-x: auto;
-                padding: 10px;
-                background: #fff;
-            }
-
-            .categories div {
-                flex: 0 0 auto;
-                padding: 10px;
-                margin-right: 8px;
-                text-align: center;
-            }
-
-            .banner {
-                margin: 10px 0;
-            }
-
-            .banner img {
-                width: 100%;
-                border-radius: 6px;
-            }
-
-            .products {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 10px;
-                padding: 10px;
-            }
-
-            .prod {
-                background: #fff;
-                padding: 10px;
-                border-radius: 6px;
-                text-align: center;
-            }
-
-            .prod img {
-                width: 100%;
-                height: 130px;
-                object-fit: cover;
-                border-radius: 4px;
-            }
-
-            .prod h3 {
-                font-size: 14px;
-                margin: 8px 0;
-            }
-
-            .prod p {
-                color: #e91e63;
-                font-weight: bold;
-            }
-
-            nav.bottom-nav {
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-                background: #fff;
-                display: flex;
-                border-top: 1px solid #ccc;
-            }
-
-            nav.bottom-nav a {
-                flex: 1;
-                padding: 8px;
-                text-align: center;
-                color: #555;
-                text-decoration: none;
-                font-size: 14px;
-            }
-
-            nav.bottom-nav a.active {
-                color: #ff5722;
-            }
-        </style>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profil Perusahaan - Nama Perusahaan</title>
+        <link rel="stylesheet" href="stylesheet/style.css" />
     </head>
 
     <body>
-
         <header>
-            <h1>Mini Shop</h1>
+            <div class="container">
+                <h1>Nama Perusahaan</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#portofolio">Portofolio</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <div class="search-bar">
-            <input type="text" placeholder="Cari produk, kategori dan lain-lain">
-            <button>🔍</button>
-        </div>
-
-        <div class="categories">
-            <div>Flash Sale</div>
-            <div>Shopee Mall</div>
-            <div>Voucher</div>
-            <div>Top-up & Tagihan</div>
-            <div>Elektronik</div>
-            <div>Fashion</div>
-            <div>Kecantikan</div>
-        </div>
-
-        <div class="banner">
-            <img src="https://via.placeholder.com/800x200/ff5722/ffffff?text=Promo+Hari+Ini" alt="Banner Promo">
-        </div>
-
-        <div class="products">
-            <div class="prod">
-                <img src="https://via.placeholder.com/150" alt="Produk 1">
-                <h3>Produk A</h3>
-                <p>Rp 120.000</p>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h2>Solusi Digital untuk Bisnis Anda</h2>
+                <p>Kami ahli dalam pembuatan website profesional dan berkualitas</p>
+                <a href="#kontak" class="cta-button">Hubungi Kami</a>
             </div>
-            <div class="prod">
-                <img src="https://via.placeholder.com/150" alt="Produk 2">
-                <h3>Produk B</h3>
-                <p>Rp 250.000</p>
-            </div>
-            <div class="prod">
-                <img src="https://via.placeholder.com/150" alt="Produk 3">
-                <h3>Produk C</h3>
-                <p>Rp 75.000</p>
-            </div>
-            <div class="prod">
-                <img src="https://via.placeholder.com/150" alt="Produk 4">
-                <h3>Produk D</h3>
-                <p>Rp 360.000</p>
-            </div>
-        </div>
+        </section>
 
-        <nav class="bottom-nav">
-            <a href="#" class="active">Home</a>
-            <a href="#">Kategori</a>
-            <a href="#">Pesanan</a>
-            <a href="#">Akun</a>
-        </nav>
+        <section id="tentang" class="section">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Kami adalah penyedia layanan IT dan digital marketing dengan pengalaman lebih dari 5 tahun.</p>
+            </div>
+        </section>
 
+        <section id="layanan" class="section">
+            <div class="container">
+                <h2>Layanan Kami</h2>
+                <ul class="layanan-list">
+                    <li>Pembuatan Website</li>
+                    <li>Desain UI/UX</li>
+                    <li>Optimasi SEO</li>
+                    <li>Pengelolaan Sosial Media</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portofolio" class="section">
+            <div class="container">
+                <h2>Portofolio</h2>
+                <div class="grid">
+                    <div class="item">Website Toko Online</div>
+                    <div class="item">Company Profile A</div>
+                    <div class="item">Landing Page Promosi</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section kontak">
+            <div class="container">
+                <h2>Kontak Kami</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Nama Anda" required />
+                    <input type="email" placeholder="Email" required />
+                    <textarea placeholder="Pesan Anda" required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>© 2025 Nama Perusahaan. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 
 </html>
